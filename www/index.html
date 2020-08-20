@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <title>SMS Gateway</title>
+        <script type="text/javascript" defer src="dwf/dist/jquery-ui/external/jquery/jquery.js"></script>
+        <script type="text/javascript" defer src="dwf/dwf.js"></script>
+        <script type="text/javascript" defer src="cordova.js"></script>
+        <script type="text/javascript" defer src="js/index.js"></script>
+        <style type="text/css">
+            html > body{
+                background-color: #333333;
+                color: #cccccc;
+                font-size: 12px;
+            }
+            textarea{
+                width: 100%;
+                border: black solid 1px;
+                background-color: #666666;
+                color: #cccccc;
+            }
+        </style>
+    </head>
+    <body> 
+        <main class="container">
+            <div>
+                <p>Serveur : <span id="status">...</span><br />
+                    Port : <span>8080</span><br />
+                    Methodes : <span>POST(recomended), GET</span></p>
+            </div>
+            <div>
+                <p>Envois de SMS : <br />
+                    <span>/sendsms?phone=06xxxxxxxx&text=LeMessage</span> <br />
+                    <small>Ajouter &psw=VotrePassword si vous avez défini un mot de passe,<br />
+                        Pas de mot de passe par defaut !</small>
+                </p>
+                <form action="#" id="form_psw"></form>
+                <button id="del_psw" class="btn btn-sm btn-danger">Supprimer le mot de passe</button>
+            </div>
+            <div>
+                <p>Log</p>
+                <textarea name="log" id="log" cols="100" rows="10" disabled="disabled"></textarea>
+            </div>
+        </main>
+    </body>
+</html>
