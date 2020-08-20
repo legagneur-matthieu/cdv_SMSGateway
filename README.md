@@ -4,7 +4,7 @@ Interface http pour l'envoi de SMS.
 compatible Android 8 et supperieur.
 
 ## Utilisation :
-1. compiler l'apk, conaitre l'ip du téléphone (pour cette doc l'ip sera noté : 192.168.1.xx)
+1. compiler l'apk, connaitre l'ip du téléphone (pour cette doc l'ip sera noté : 192.168.1.xx)
 2. Installer et lancer l'APK sur le téléphone
 3. Depuis votre navigateur allez sur http://192.168.1.xx:8080/run pour verifier que le serveur répond
 4. (facultif) Definir un mot de passe sur l'interface de l'application
